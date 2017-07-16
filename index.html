@@ -1,239 +1,25 @@
-
-<!--header('location:wap.html');die;-->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=1.0, user-scalable=no">
-    <title>ÊµÊ±¾º¼ÛRTB¹ã¸æÆ½Ì¨_´«Ñú¿Æ¼¼_ÖÐ¹úÁìÏÈµÄÖÇÄÜÊý×ÖÓªÏúÒýÇæ</title>
-    <meta name="baidu-site-verification" content="mFryG49RG4" />
-    <meta name="keywords" content="Êý×ÖÓªÏú¡¢»¥ÁªÍø¹ã¸æ¡¢¾«×¼¹ã¸æ¡¢ÍøÂç¹ã¸æ¹«Ë¾" />
-    <meta name="description" content="¡¡¡¡´«Ñú¿Æ¼¼×÷ÎªÖÐ¹úÁìÏÈµÄÖÇÄÜÊý×ÖÓªÏúÒýÇæÍøÂç¹ã¸æ¹«Ë¾£¬Í¨¹ýRTBÆ½Ì¨¡¢ÓªÏúÆ½Ì¨ºÍ¼¼ÊõÆ½Ì¨£¬ÒÔÊÓÆµ¹ã¸æ¡¢¸»Ã½Ìå¹ã¸æµÈÐÎÊ½£¬ÊµÏÖÆ·ÅÆ¹ã¸æ¼°Ð§¹û¹ã¸æµÄ¾«×¼¶¨ÏòÍ¶·Å£¬ÈÃÄúÒÔ×îÐ¡µÄ³É±¾»ñµÃ¸ü¸ßµÄÊÐ³¡Í¶×Ê»Ø±¨¡£" />
-    <!--[if lt IE 9]> 
-        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> 
-    <![endif]-->
-    <script type="text/javascript" src="../js/jquery-1.7.2.min.js"></script>
-    <script type="text/javascript" src="js/nav_top.js"></script>
-    <script type="text/javascript" src="js/imgAuto.js"></script>
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <link href="css/index.css" rel="stylesheet" type="text/css" />
-    <link href="css/style_1000.css" rel="stylesheet" type="text/css" />
-    <!--
-    <style>
-     
-        #index_heads_li{ background-color:#f37016;color:#ffffff;}
-         
-    </style>
-    -->
-    <style type="text/css">
-        .forexample {
-            color: red;
-            margin: 10px;
-            display: none;
-        }
-        #imgauto {
-            height: 730px;
-	        width: 100%;
-	        background: url(../images/index_banner01.jpg) no-repeat center;
-        }
-        .img-con {
-            left: 0;
-            top: 0;
-            width: 100%;
-        }
-        .img-btn {
-            left: 49%;
-            top: 650px;
-        }
-    </style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="Cache-Control" content="no-transform">
+    <title>å’Œç¡•å¹¿å‘Š</title>
+    <link href="css/index1.css" rel="stylesheet">
+    <link href="css/gallay.css" rel="stylesheet">
+    <script src="js/jquery.min1.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.min1.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <script src="js/bootstrap.js"></script>
+    <script src="js/fullPage/jquery.fullPage.js"></script>
+    <link href="js/fullPage/jquery.fullPage.css" rel="stylesheet">
 </head>
-
-<body>
-    <div id="wrapper">
-        <div id="nav_box" >
-	<div class="nav_box">
-    	<div class="nav_logo"><a href="/"><div style="width:150px; height:60px;"><img src="../images/logo.png" width="215" height="90" /></div></a></div>
-        <div class="nav_list">
-        	<ul>
-            	<a href="/" title="Ê×Ò³"><li id="index_heads_li">Ê×&nbsp;&nbsp;Ò³</li></a>
-                <a href="/rtb/" title="RTBÆ½Ì¨"><li id="rtb_head_li">RTBÆ½Ì¨</li></a>
-                <a href="/product/" title="¼¼ÊõÆ½Ì¨"><li id="product_head_li">¼¼ÊõÆ½Ì¨</li></a>
-                 <a href="/marketing/" title="ÓªÏúÆ½Ì¨"><li id="sales_head_li">¿çÆÁÓªÏú</li></a>
-                <a href="/news/" title="ÐÂÎÅ¶¯Ì¬"><li id="news_head_li">ÐÂÎÅ¶¯Ì¬</li></a>
-                <a href="/cases/" title="³É¹¦°¸Àý"><li id="cases_head_li">³É¹¦°¸Àý</li></a>
-                <a href="/partnership/" title="ºÏ×÷»ï°é"><li id="partnership_head_li">ºÏ×÷»ï°é</li></a>
-                <a href="/contact/" title="ÁªÏµÎÒÃÇ"><li id="contact_head_li">ÁªÏµÎÒÃÇ</li></a>
-            </ul>
-        </div>
-        <div class="nav_side">
-        	<ul>
-            	<li><a href="/hr" title="ÕÐÏÍÄÉÊ¿">ÕÐÏÍÄÉÊ¿</a></li>
-                		<li><a id='translnk' href="javascript:Adsame.translate();" title="·±Ìå">·±Ìå</a></li>
-                <li><a href="http://www.adsame.com/en/index.html " title="English" target="_blank">English</a></li>
-            </ul>
-        </div>
-	</div>
+<body >
+<div >
+    <h2 style="padding: 20px;">å’Œç¡•æµ‹è¯•ä¸­</h2>
 </div>
-<script src="/js/app.js"></script>            <div id="wrapper-content">
-                <p class="forexample"> </p>
-                <div id="imgauto">
-                    <div class="img-btn">
-                        <a class="img-btn-checked"></a>
-                        <a></a>
-                        <a></a>
-                    </div>
-                    <div class="img-con">
-                        <a href="http://www.adsame.com/">
-                            <div id="banner_box_01_01" style="filter:blur(add=add,direction=direction,strength=strength);">
-                                <div class="banner_box_cont"></div>
-                            </div>
-                        </a>
-                        <a href="http://www.adsame.com/rtb/ott.html">
-                            <div id="banner_box_01_02" style="filter:blur(add=add,direction=direction,strength=strength);">
-                                <div class="banner_box_cont"></div>
-                            </div>
-                        </a>
-                        <a href="http://www.adsame.com/article/news_201507271204.html">
-                            <div id="banner_box_01_03" style="filter:blur(add=add,direction=direction,strength=strength);">
-                                <div class="banner_box_cont"></div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <!--imgauto-->
-                <a href="/rtb/samedata.html">
-                    <div id="banner_box_02">
-                        <div class="banner_box_cont"></div>
-                    </div>
-                </a>
-                <a href="/marketing/">
-                    <div id="banner_box_03">
-                        <div class="banner_box_cont"></div>
-                    </div>
-                </a>
-                <a href="/cx.html">
-                    <div id="banner_box_04"></div>
-                </a>
-            </div>
-            <!-- µ×²¿¿ªÊ¼ -->
-            <div id="foot_box">
-                <div class="foot_cont"> <span class="foot_cont_3">¹ØÓÚÎÒÃÇ
-<ul>
-  <li><a href="/about/">¹«Ë¾¼ò½é</a></li>
-  <!--<li><a href="/company/introduction.html">¸ß²ã¼ò½é</a></li>-->
-  <!--<li><a href="/about/management.html">¹ÜÀíÍÅ¶Ó</a></li>-->
-  <li><a href="/aboutus/memorabilia.html">´«Ñú´óÊÂ¼Ç</a></li>
-  <li><a href="/aboutus/achievements.html">ÎÒÃÇµÄÈÙÓþ</a></li>
-  <!--<li><a href="http://wiki.adsame.com/" target="_blank">´«Ñú°Ù¿Æ</a></li>-->
-  <li><a href="/about/privacy.html" rel="nofollow">ÒþË½È¨Àû</a></li>
-</ul>
-</span> <span class="foot_cont_2">RTBÆ½Ì¨
-<ul>
-  <li><a href="/rtb/adplace.html">AdPlaceÍøÂç¹ã¸æ½»Ò×Æ½Ì¨</a></li>
-  <li><a href="/rtb/dsp.html">DSPÐèÇó·½Æ½Ì¨</a></li>
-  <li><a href="/rtb/ssp.html">SSP¹©Ó¦·½Æ½Ì¨</a></li>
-  <li><a href="/rtb/samedata.html">DMPÊý¾Ý¹ÜÀíÆ½Ì¨</a></li>
-</ul>
-</span> <span class="foot_cont_2">¼¼ÊõÆ½Ì¨
-<ul>
-  <li><a href="/product/">Dolphin¹ã¸æ·¢²¼Ð­×÷Æ½Ì¨</a></li>
-  <li><a href="/product/eagle.html">Eagle¹ã¸æ¼à²âÐ­×÷Æ½Ì¨</a></li>
-  <li><a href="/product/samba.html">SamBa¸»Ã½Ìå¹ã¸æÐ­×÷Æ½Ì¨</a></li>
-</ul>
-</span> <span class="foot_cont_2">¿çÆÁÓªÏú
-<ul>
-  <li><a href="/marketing/">MaxÆ·ÅÆ¹ã¸æÍøÂçÆ½Ì¨</a></li>
-  <li><a href="/marketing/otv.html">OTV NetworkÊÓÆµ¹ã¸æÍøÂçÆ½Ì¨</a></li>
-  <li><a href="/marketing/mobile.html">ÒÆ¶¯»¥ÁªÍøÕûºÏÓªÏúÆ½Ì¨</a></li>
-</ul>
-</span> <span class="foot_cont_3">ÁªÏµÎÒÃÇ
-<ul>
-  <li><a href=" http://weibo.com/adsame" target="_blank" rel="nofollow">ÐÂÀËÎ¢²©</a></li>
-  <!--
-  <li><a href="http://t.qq.com/adsame2010" rel="nofollow"  target="_blank">ÌÚÑ¶Î¢²©</a></li>
-  <li><a href="http://blog.adsame.com/" rel="nofollow"  target="_blank">´«Ñú²©¿Í</a></li>
-  -->
-  <li><a href="/contact/edm.html">ÓÊ¼þ¶©ÔÄ</a></li>
-</ul>
-</span> <span class="foot_cont_4"><img src="/images/ewm.jpg" width="150" height="150" /></span> </div>
-            </div>
-            <div id="foot_box2" style="width:100%;height:110px;background:white;">
-                <div id="font_bottom"> <span class="font_bottom_5">
-<ul>
-  <li><a href="#">ÓÑÇéÁ´½Ó</a></li>
-</ul>
-</span> <span class="font_bottom_2"><a href="/sitemap.html">ÍøÕ¾µØÍ¼</a> Copyright ? 2008-2014 Adsame Networks Technology Incorporated. All rights reserved. <a href="http://www.miitbeian.gov.cn" target="_blank">»¦ICP±¸09014373ºÅ</a></span>
-                    <div style="width:300px;margin:0 auto; padding:20px 0;">
-                        <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010502000383" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="images/ghs.png" style="float:left;" />
-                            <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">»¦¹«Íø°²±¸ 31010502000383ºÅ</p>
-                        </a>
-                    </div>
-                </div>
-                <!-- µ×²¿½áÊø -->
-
-                <div class="font_bottom_6">
-                    <ul>
-                        <li>
-                            <a href="http://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&amp;entyId=20120516123658511" target="_blank"><img src="/images/icon.gif" width="47" height="47" /></a>
-                        </li>
-                    </ul>
-                </div>
-                <div id="right_but" usemap="#updown" style="right:0px;bottom:50%;position:fixed"><img usemap="#updown" src="images/easynews/new/left_but.png" width="45" height="110" /></div>
-                <map name="updown" id="updown">
-<area shape="rect" coords="0,0,45,45"   id="goup"     href="javascript:void(0)"/>
-<area shape="rect" coords="0,45,45,90" id="godown" href="javascript:void(0)"/>
-<area shape="rect" coords="0,90,45,110" id="gotop" href="#"/>
-</map>
-                <script type="text/javascript" src="/js/testweb.js"></script>
-                <!--rt -->
-                <SCRIPT LANGUAGE="JavaScript" src="http://i.adsame.com/rt.js">
-                </SCRIPT>
-                <SCRIPT LANGUAGE="JavaScript">
-                    try {
-                        sam._z = "adsamert";
-                        sam.getTracker();
-                    } catch (err) {}
-                </SCRIPT>
-
-                <!--ga -->
-                <script type="text/javascript">
-                    var gaJsHost = (("https:" == document.location.protocol) ? " https://ssl." : " http://www.");
-                    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-                </script>
-                <script type="text/javascript">
-                    try {
-                        var pageTracker = _gat._getTracker("UA-8325060-1");
-                        pageTracker._trackPageview();
-                    } catch (err) {}
-                </script>
-                <script type="text/javascript">
-                    try {
-                        var pageTracker = _gat._getTracker("UA-24944120-1");
-                        pageTracker._trackPageview();
-                    } catch (err) {}
-                </script>
-
-                <!--°Ù¶È -->
-                <script type="text/javascript">
-                    //var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-                    //document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Ff508b2bc5f62ccdfe6189028875ed0c3' type='text/javascript'%3E%3C/script%3E"));
-                </script>
-
-                <!-- AdSame-Eagle Track µã»÷µ½´ïµã Start  -->
-                <script type='text/javascript' src='http://eagleasp.adsame.com/t?z=eagleasp&id=2291&pt=0'></script>
-                <!-- AdSame-Eagle Track µã»÷µ½´ïµã End  -->
-
-                <!-- 1049224:±´Ë¼¿Íµ°¸âCOOKIES²É¼¯  Start  -->
-                <script type='text/javascript' src='http://sammix.adsame.com/t?z=sammix&id=1049224'></script>
-                <!-- 1049224:±´Ë¼¿Íµ°¸âCOOKIES²É¼¯ End  -->
-
-                <!-- 100000007:DSP Retargeting Start  -->
-                <script type='text/javascript' src="http://sammix.adsame.com/t?z=sammix&id=1071599"></script>
-                <!-- 100000007:DSP Retargeting End  -->
-
-                <script type="text/javascript" src="http://sammix.adsame.com/t?z=sammix&id=1184711"></script>
-            </div>
 </body>
-
 </html>
